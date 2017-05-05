@@ -1,0 +1,40 @@
+model_type,clf,parameters,time_used,auc-roc,p_at_5,recall_at_5,accuracy_at_5,f1_at_5,p_at_10,recall_at_10,accuracy_at_10,f1_at_10,p_at_20,recall_at_20,accuracy_at_20,f1_at_20
+RF,"RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
+            max_depth=1, max_features='sqrt', max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=10, min_weight_fraction_leaf=0.0,
+            n_estimators=1, n_jobs=-1, oob_score=False, random_state=None,
+            verbose=0, warm_start=False)","{'max_features': 'sqrt', 'min_samples_split': 10, 'n_estimators': 1, 'max_depth': 1}",0.140374183655,0.69779805606,0.750933333333,0.552807224185,0.957173333333,0.636815920398,0.375466666667,0.552807224185,0.907173333333,0.447197077974,0.267333333333,0.78720062819,0.839013333333,0.399124116652
+DT,"DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=1,
+            max_features='sqrt', max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=10, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best')","{'max_features': 'sqrt', 'min_samples_split': 10, 'criterion': 'gini', 'max_depth': 1}",0.0303621292114,0.603951538895,1.0,0.736160188457,0.98208,0.84803256445,0.529066666667,0.778955634079,0.937893333333,0.630141337145,0.264533333333,0.778955634079,0.837893333333,0.394943764308
+KNN,"KNeighborsClassifier(algorithm='auto', leaf_size=30, metric='minkowski',
+           metric_params=None, n_jobs=1, n_neighbors=5, p=2,
+           weights='uniform')","{'n_neighbors': 5, 'weights': 'uniform', 'algorithm': 'auto'}",1.99787306786,0.580480759114,0.397866666667,0.292893600314,0.921866666667,0.337403889643,0.2536,0.373380447585,0.8828,0.302048594569,0.1268,0.373380447585,0.7828,0.189310241863
+ET,"ExtraTreesClassifier(bootstrap=False, class_weight=None, criterion='gini',
+           max_depth=1, max_features='sqrt', max_leaf_nodes=None,
+           min_impurity_split=1e-07, min_samples_leaf=1,
+           min_samples_split=10, min_weight_fraction_leaf=0.0,
+           n_estimators=1, n_jobs=-1, oob_score=False, random_state=None,
+           verbose=0, warm_start=False)","{'max_features': 'sqrt', 'min_samples_split': 10, 'criterion': 'gini', 'max_depth': 1, 'n_estimators': 1}",0.176604032516,0.506905824099,0.986666666667,0.726344719278,0.980746666667,0.836725463591,0.6792,1.0,0.96792,0.808956646022,0.3396,1.0,0.86792,0.507017020006
+AB,"AdaBoostClassifier(algorithm='SAMME',
+          base_estimator=DecisionTreeClassifier(class_weight=None, criterion='gini', max_depth=1,
+            max_features=None, max_leaf_nodes=None,
+            min_impurity_split=1e-07, min_samples_leaf=1,
+            min_samples_split=2, min_weight_fraction_leaf=0.0,
+            presort=False, random_state=None, splitter='best'),
+          learning_rate=1.0, n_estimators=1, random_state=None)","{'n_estimators': 1, 'algorithm': 'SAMME'}",0.084233045578,0.653222717351,0.464,0.341578327444,0.92848,0.393487109905,0.672533333333,0.990184530821,0.966586666667,0.801016356995,0.3396,1.0,0.86792,0.507017020006
+GB,"GradientBoostingClassifier(criterion='friedman_mse', init=None,
+              learning_rate=0.1, loss='deviance', max_depth=1,
+              max_features=None, max_leaf_nodes=None,
+              min_impurity_split=1e-07, min_samples_leaf=1,
+              min_samples_split=2, min_weight_fraction_leaf=0.0,
+              n_estimators=1, presort='auto', random_state=None,
+              subsample=0.5, verbose=0, warm_start=False)","{'n_estimators': 1, 'subsample': 0.5, 'learning_rate': 0.1, 'max_depth': 1}",0.108603000641,0.653222717351,0.464,0.341578327444,0.92848,0.393487109905,0.672533333333,0.990184530821,0.966586666667,0.801016356995,0.3396,1.0,0.86792,0.507017020006
+LR,"LogisticRegression(C=0.01, class_weight=None, dual=False, fit_intercept=True,
+          intercept_scaling=1, max_iter=100, multi_class='ovr', n_jobs=1,
+          penalty='l1', random_state=None, solver='liblinear', tol=0.0001,
+          verbose=0, warm_start=False)","{'penalty': 'l1', 'C': 0.01}",0.349344968796,0.656689687204,0.1392,0.102473498233,0.896,0.118046132972,0.130133333333,0.191597958382,0.858106666667,0.154994441798,0.117866666667,0.347074990185,0.779226666667,0.175972927242
+NB,GaussianNB(priors=None),{},0.0338690280914,0.656855684976,0.213333333333,0.157047506871,0.903413333333,0.180913613749,0.160266666667,0.235963879073,0.864133333333,0.190884548198,0.129333333333,0.380840204162,0.783813333333,0.193092465413
